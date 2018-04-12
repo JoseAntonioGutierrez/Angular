@@ -8,13 +8,15 @@ import { TodoDetailComponent } from './todo-detail/todo-detail.component';
 import { PuebloComponent } from './pueblo/pueblo.component';
 import { SearchModule } from './search/search.module';
 import { VisualizarFotosModule } from './visualizar-fotos/visualizar-fotos.module';
+import { NavegadorComponent } from './navegador/navegador.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoDetailComponent,
-    PuebloComponent
+    PuebloComponent,
+    NavegadorComponent
   ],
   imports: [
     FormsModule,
