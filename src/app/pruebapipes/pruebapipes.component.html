@@ -1,0 +1,61 @@
+<div>
+  <h3>Currency</h3>
+  <p>{{a | currency:'EUR':'true'}}</p>
+  <!--<p>{{a | currency:'CAD'}}</p>
+  <p>{{a | currency:'CAD':'code'}}</p>
+  <p>{{b | currency:'CAD':'symbol':'4.2-2'}}</p>
+  <p>{{b | currency:'CAD':'symbol-narrow':'4.2-2'}}</p>
+  <p>{{b | currency:'CAD':'symbol':'4.2-2':'fr'}}</p>-->
+</div>
+
+<div>
+  <h3>Fecha</h3>
+  <p>{{f | date : 'short'}}</p>
+</div>
+
+<div>
+  <h3>Decimal</h3>
+  <p>{{b}}</p>
+  <p>{{b | number:'2.1-3'}}
+</div>
+
+<div>
+  <h3>JSON</h3>
+  <p>{{data}}</p>
+  <p>{{data | json}}
+</div>
+
+<div>
+  <h3>Lower</h3>
+  <p>{{minus}}</p>
+  <p>{{minus | lowercase}}
+</div>
+
+<div>
+  <h3>Upper</h3>
+  <p>{{mayus}}</p>
+  <p>{{mayus | uppercase}}
+</div>
+
+<div>
+  <h3>Percent</h3>
+  <p>{{a}}</p>
+  <p>{{a | percent}}
+  <p>{{b}}</p>
+  <p>{{b | percent:'2.1-3'}}
+</div>
+
+<div>
+  <h3>Slice</h3>
+  <p>{{mayus}}</p>
+  <p>{{mayus | slice:1}}
+  <p>{{mayus | slice:1 |uppercase}}
+</div>
+
+<div>
+  <h3>Async</h3>
+  <p>No Async {{timer}}</p>
+  <p>Async {{timerAsync | async}}
+</div>
+
+

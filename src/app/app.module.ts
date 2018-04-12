@@ -9,6 +9,8 @@ import { PuebloComponent } from './pueblo/pueblo.component';
 import { SearchModule } from './search/search.module';
 import { VisualizarFotosModule } from './visualizar-fotos/visualizar-fotos.module';
 import { NavegadorComponent } from './navegador/navegador.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { PruebapipesComponent } from './pruebapipes/pruebapipes.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { NavegadorComponent } from './navegador/navegador.component';
     AppComponent,
     TodoDetailComponent,
     PuebloComponent,
-    NavegadorComponent
+    NavegadorComponent,
+    NotfoundComponent,
+    PruebapipesComponent
   ],
   imports: [
     FormsModule,
