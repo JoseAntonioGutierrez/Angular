@@ -1,0 +1,22 @@
+<div>
+  <form #formFoto="ngForm" (ngSubmit)="subirFoto(formFoto)">
+    <label>AlbumId</label>
+    <input type="number" name="albumId" required [(ngModel)]="foto.albumId" #albumId="ngModel"><br>
+    <div *ngIf="!albumId.valid">AlbumId is required</div> <!--AlbumId.pristine || dirty-->
+    <label>Id</label>
+    <input type="number" name="id" [(ngModel)]="foto.id" required #id="ngModel"><br>  <!--AlbumId.pristine || dirty-->
+    <div *ngIf="!id.valid">Id is required</div>
+    <label>Title</label>
+    <input type="text" name="title" [(ngModel)]="foto.title" required #title="ngModel"><br> <!--AlbumId.pristine || dirty-->
+    <div *ngIf="!title.valid">Title is required</div>
+    <label>Url</label>
+    <input type="text" name="url" [(ngModel)]="foto.url" required #url="ngModel"><br> <!--AlbumId.pristine || dirty-->
+    <div *ngIf="!url.valid">Url is required</div>
+    <label>ThumbnailUrl</label>
+    <input type="text" name="thumbnailUrl" [(ngModel)]="foto.thumbnailUrl" required #thumbnailUrl="ngModel"><br>  <!--AlbumId.pristine || dirty-->
+    <div *ngIf="!thumbnailUrl.valid">ThumbnailUrl is required</div>
+    <button type="submit" name="boton" [disabled]="!formFoto.valid">Enviar</button>
+    <button type="reset" name="reset" (click)="reset(formFoto)">Reset</button>
+  </form>
+  <!--<h3>{{foto | json}}</h3>-->
+</div>

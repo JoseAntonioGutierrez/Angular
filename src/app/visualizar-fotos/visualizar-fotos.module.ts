@@ -4,6 +4,7 @@ import { VisualizarFotosComponent } from './visualizar-fotos.component';
 import { VisualizarFotosService } from "./visualizar-fotos.service";
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { FormularioComponent } from './formulario/formulario.component';
 
 @NgModule({
   imports: [
@@ -11,7 +12,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  declarations: [VisualizarFotosComponent],
+  declarations: [VisualizarFotosComponent, FormularioComponent],
   providers : [VisualizarFotosService, HttpClientModule],
   exports: [VisualizarFotosComponent]
 })

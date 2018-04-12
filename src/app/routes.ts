@@ -5,11 +5,14 @@ import { SearchComponent } from './search/search.component';
 import { VisualizarFotosComponent } from './visualizar-fotos/visualizar-fotos.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { PruebapipesComponent } from './pruebapipes/pruebapipes.component';
+import { FormularioComponent } from './visualizar-fotos/formulario/formulario.component';
+
 
 export const routes: Routes = [
     { path: 'not-found', component: NotfoundComponent}, 
     { path: '', component:PuebloComponent},
     { path: 'pueblo', component:PuebloComponent},
+    //{ path: 'form', component:FormularioComponent},
     { path: 'search', component:SearchComponent},
     { path: 'fotos', component:VisualizarFotosComponent},
     { path: 'pipes', component:PruebapipesComponent},

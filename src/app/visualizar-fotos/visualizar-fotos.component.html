@@ -7,6 +7,8 @@
   <input type="text" [(ngModel)]="busqueda" [disabled]="!mostrar">
   <button type="button" (click)="buscar()" [disabled]="!mostrar">buscar</button>
 </div>
+<app-formulario (PasameLaFoto)="subir($event)"></app-formulario>
+<!--<h1>{{foto | json}}</h1>-->
 <div *ngIf="mostrar">
   <ol>
     <li *ngFor="let foto of fotos">{{foto.title}}<br>{{foto.url}}<div *ngIf="foto.id<10"><img src={{foto.thumbnailUrl}}></div></li>  

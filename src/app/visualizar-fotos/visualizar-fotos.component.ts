@@ -12,6 +12,7 @@ export class VisualizarFotosComponent implements OnInit {
   fotos : IFoto[]=[];
   busqueda:number;
   mostrar:boolean=false;
+  foto:IFoto;
 
   constructor(private servicio : VisualizarFotosService) { }
 
@@ -25,6 +26,10 @@ export class VisualizarFotosComponent implements OnInit {
     this.servicio.getFoto(this.busqueda).subscribe(resp=>{
       this.fotos=resp.body;
     });
+  }
+
+  subir(data) : void{
+    this.fotos.push(data.foto);
   }
 
 }
