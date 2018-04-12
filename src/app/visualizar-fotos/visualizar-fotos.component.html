@@ -1,0 +1,14 @@
+<div>
+  <h3>MOSTRAR</h3>
+    <input type="radio" [value]="true" [(ngModel)]="mostrar"/>Si
+    <input type="radio" [value]="false" [(ngModel)]="mostrar"/>No
+</div>
+<div>
+  <input type="text" [(ngModel)]="busqueda" [disabled]="!mostrar">
+  <button type="button" (click)="buscar()" [disabled]="!mostrar">buscar</button>
+</div>
+<div *ngIf="mostrar">
+  <ol>
+    <li *ngFor="let foto of fotos">{{foto.title}}<br>{{foto.url}}<div *ngIf="foto.id<10"><img src={{foto.thumbnailUrl}}></div></li>  
+  </ol>
+</div>
